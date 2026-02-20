@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bypnimlbnhu3m"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_o308s"]
+
+[node name="WrongFloor" type="Node2D" unique_id=189181942]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1356421329]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=2058148095]
+shape = SubResource("CircleShape2D_o308s")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1437322889]
