@@ -1,17 +1,8 @@
 [gd_scene format=3 uid="uid://bypnimlbnhu3m"]
 
-[ext_resource type="Texture2D" uid="uid://drnk4t1ehb8hn" path="res://Assets/Aseprite/main-character.png" id="1_awitu"]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_o308s"]
+[ext_resource type="PackedScene" uid="uid://bpe11oddu1xq7" path="res://Player/player.tscn" id="1_awitu"]
 
 [node name="WrongFloor" type="Node2D" unique_id=189181942]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1356421329]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=2058148095]
-shape = SubResource("CircleShape2D_o308s")
-
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1437322889]
-position = Vector2(156, 114)
-texture = ExtResource("1_awitu")
-hframes = 4
+[node name="Player" parent="." unique_id=501644607 instance=ExtResource("1_awitu")]
+position = Vector2(154, 119)

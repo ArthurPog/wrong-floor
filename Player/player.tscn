@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bpe11oddu1xq7"]
+
+[ext_resource type="Script" uid="uid://chft2bu1o4qh7" path="res://Player/Scripts/player.gd" id="1_4ntmi"]
+[ext_resource type="Texture2D" uid="uid://drnk4t1ehb8hn" path="res://Assets/Aseprite/main-character.png" id="1_l8h54"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_o308s"]
+
+[node name="Player" type="CharacterBody2D" unique_id=501644607]
+script = ExtResource("1_4ntmi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=313708489]
+scale = Vector2(0.5, 0.5)
+shape = SubResource("CircleShape2D_o308s")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1687108417]
+position = Vector2(0, -10)
+texture = ExtResource("1_l8h54")
+hframes = 4
