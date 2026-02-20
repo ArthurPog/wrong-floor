@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://bypnimlbnhu3m"]
 
+[ext_resource type="Texture2D" uid="uid://drnk4t1ehb8hn" path="res://Assets/Aseprite/main-character.png" id="1_awitu"]
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_o308s"]
 
 [node name="WrongFloor" type="Node2D" unique_id=189181942]
@@ -10,3 +12,6 @@
 shape = SubResource("CircleShape2D_o308s")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1437322889]
+position = Vector2(156, 114)
+texture = ExtResource("1_awitu")
+hframes = 4
